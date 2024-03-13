@@ -1,10 +1,12 @@
 # Spotify Users App 🎵
 Creacion de interfaz de spotify con CRUD de usuarios
 
-![Spotify-Users](https://github.com/VictorArdila/Spotify-Users-App/assets/89551043/3115f722-1642-4418-b4f0-69afa4a4ad04)
+![Spotify-Users-Intro](https://github.com/VictorArdila/Spotify-Users-App/assets/89551043/8c435727-59d8-4d99-b33b-79cbb9fdab90)
 
 ## Descripción ℹ️
 La aplicación Spotify Users proporciona funcionalidades CRUD (Crear, Leer, Actualizar, Eliminar) para los usuarios de Spotify. Permite a los usuarios registrarse, consultar sus datos, eliminar su cuenta y filtrar usuarios según diferentes criterios.
+
+![Spotify-Users](https://github.com/VictorArdila/Spotify-Users-App/assets/89551043/3115f722-1642-4418-b4f0-69afa4a4ad04)
 
 ## Funcionalidades 🛠️
 1. **Registro de Usuarios:**
