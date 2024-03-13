@@ -32,7 +32,22 @@ const LoginPage = ({ onComponentChange }) => {
             className="input"
             required
           />
-          <ButtonLogin text="Iniciar sesion" mode="view-web" icon={faAngleRight} colorBg={"#1db954"} colorIcon={"white"} />
+          <div className="form-other-links">
+            <div className="forgot-password">
+              <span onClick={handleForgotClick}>Forgot your password?</span>
+            </div>
+            <div className="register">
+              <span onClick={handleRegisterClick}>Don't have an account?</span>
+            </div>
+          </div>
+          <ButtonLogin
+            text="Iniciar sesion"
+            mode="view-web"
+            icon={faAngleRight}
+            colorBg={"#1db954"}
+            colorIcon={"white"}
+            margin={"0px"}
+          />
         </div>
         <div className="divider">
           <hr />
@@ -40,9 +55,17 @@ const LoginPage = ({ onComponentChange }) => {
           <hr />
         </div>
         <div className="social-login-buttons">
-          <ButtonSocial text="Continue with phone number" icon={faMobile} color={"black"} />
+          <ButtonSocial
+            text="Continue with phone number"
+            icon={faMobile}
+            color={"black"}
+          />
           <ButtonSocial text="Continue with Google" icon={faGoogle} />
-          <ButtonSocial text="Continue with Facebook" icon={faFacebook} color={"#3B5998"} />
+          <ButtonSocial
+            text="Continue with Facebook"
+            icon={faFacebook}
+            color={"#3B5998"}
+          />
         </div>
       </div>
     </>

@@ -55,7 +55,6 @@
   }
   @media only screen and (max-width: 1024px) {
     font-size: 20px;
-
   }
 }
 @font-face {
@@ -82,7 +81,9 @@
   width: 100%;
   height: 20px;
   margin: 2px 0px;
-  padding: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  /* padding: 10px; */
   border: 1px solid #000;
   border-radius: 15px;
   outline: none;
@@ -124,11 +125,72 @@
     font-size: 16px;
   }
   @media only screen and (max-width: 1024px) {
-    font-size: 16px;
+    font-size: 12px;
   }
 }
 .inputcontainer input:focus {
   border: 1px solid #1db954;
+}
+.form-other-links {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 5px 0px;
+}
+.forgot-password span{
+  font-size: 12px;
+  color: #000;
+  font-weight: 600;
+  @media only screen and (max-width: 260px) {
+    font-size: 12px;
+  }
+  @media only screen and (max-width: 320px) {
+    font-size: 12px;
+  }
+  @media only screen and (max-width: 360px) {
+    font-size: 14px;
+  }
+  @media only screen and (max-width: 411px) {
+    font-size: 16px;
+  }
+  @media only screen and (max-width: 768px) {
+    font-size: 16px;
+  }
+  @media only screen and (max-width: 1024px) {
+    font-size: 12px;
+  }
+}
+.forgot-password span:hover {
+  color: #1db954;
+  cursor: pointer;
+}
+.register span {
+  font-size: 12px;
+  color: #000;
+  font-weight: 600;
+  @media only screen and (max-width: 260px) {
+    font-size: 12px;
+  }
+  @media only screen and (max-width: 320px) {
+    font-size: 12px;
+  }
+  @media only screen and (max-width: 360px) {
+    font-size: 14px;
+  }
+  @media only screen and (max-width: 411px) {
+    font-size: 16px;
+  }
+  @media only screen and (max-width: 768px) {
+    font-size: 16px;
+  }
+  @media only screen and (max-width: 1024px) {
+    font-size: 12px;
+  }
+}
+.register span:hover {
+  color: #1db954;
+  cursor: pointer;
 }
 .social-login-buttons {
   display: flex;

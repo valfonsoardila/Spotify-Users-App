@@ -10,6 +10,7 @@ const ButtonLogin = ({ text, icon, color }) => {
         borderRadius: "10px",
         backgroundColor: "transparent",
         marginTop: "0.2%",
+        cursor: "pointer",
       }}
       onMouseOver={(e) => (e.target.style.backgroundColor = "#f0f0f0")}
       onMouseOut={(e) => (e.target.style.backgroundColor = "transparent")}

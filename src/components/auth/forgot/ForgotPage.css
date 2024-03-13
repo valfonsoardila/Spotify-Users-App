@@ -1,0 +1,100 @@
+.logocontainer {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    @media only screen and (max-width: 260px) {
+      margin-top: 5%;
+    }
+  }
+  .logocontainer h1 {
+    margin: 0%;
+    width: 100%;
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(29, 185, 84);
+    font-family: "Spotify";
+    @media only screen and (max-width: 260px) {
+      font-size: 16px;
+    }
+    @media only screen and (max-width: 320px) {
+      font-size: 16px;
+    }
+    @media only screen and (max-width: 360px) {
+      font-size: 18px;
+    }
+    @media only screen and (max-width: 411px) {
+      font-size: 20px;
+    }
+    @media only screen and (max-width: 768px) {
+      font-size: 20px;
+    }
+    @media only screen and (max-width: 1024px) {
+      font-size: 30px;
+    }
+  }
+  .logocontainer span {
+    font-size: 20px;
+    color: #000;
+    font-weight: 600;
+    @media only screen and (max-width: 260px) {
+      font-size: 16px;
+    }
+    @media only screen and (max-width: 320px) {
+      font-size: 16px;
+    }
+    @media only screen and (max-width: 360px) {
+      font-size: 18px;
+    }
+    @media only screen and (max-width: 411px) {
+      font-size: 20px;
+    }
+    @media only screen and (max-width: 768px) {
+      font-size: 20px;
+    }
+    @media only screen and (max-width: 1024px) {
+      font-size: 20px;
+    }
+  }
+  .title-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-row: 1; 
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    @media only screen and (max-width: 260px) {
+      margin-top: 5%;
+    }
+  }
+  .title-container span{
+    font-size: 20px;
+    color: #000;
+    font-weight: 600;
+    align-self: center;
+    @media only screen and (max-width: 260px) {
+      font-size: 16px;
+    }
+    @media only screen and (max-width: 320px) {
+      font-size: 16px;
+    }
+    @media only screen and (max-width: 360px) {
+      font-size: 18px;
+    }
+    @media only screen and (max-width: 411px) {
+      font-size: 20px;
+    }
+    @media only screen and (max-width: 768px) {
+      font-size: 20px;
+    }
+    @media only screen and (max-width: 1024px) {
+      font-size: 20px;
+    }
+  }
+  .title-container svg:hover{
+    color: #1db954;
+    cursor: pointer;
+  }
