@@ -57,7 +57,4 @@ Las contribuciones son bienvenidas. Si deseas contribuir a este proyecto, por fa
 5. Crea un nuevo Pull Request.
 
 ## Autor 🖊️
-Nombre del autor
-
-## Licencia ©️
-Este proyecto está licenciado bajo [Nombre de la licencia].
+Victor Alfonso Ardila Montalban
