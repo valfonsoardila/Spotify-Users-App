@@ -40,7 +40,6 @@ const LoginPage = ({ onComponentChange }) => {
             text="Iniciar sesion"
             mode="view-web"
             icon={faAngleRight}
-            colorBg={"#1db954"}
             colorIcon={"white"}
             margin={"0px"}
           />

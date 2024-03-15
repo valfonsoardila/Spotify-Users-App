@@ -37,7 +37,7 @@
 }
 .logocontainer span {
   font-size: 20px;
-  color: #000;
+  color: var(--textPrimary);
   font-weight: 600;
   @media only screen and (max-width: 260px) {
     font-size: 16px;
@@ -72,7 +72,7 @@
 }
 .title-container span{
   font-size: 20px;
-  color: #000;
+  color: var(--textPrimary);
   font-weight: 600;
   align-self: center;
   @media only screen and (max-width: 260px) {
@@ -94,7 +94,11 @@
     font-size: 20px;
   }
 }
+.title-container svg{
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+}
 .title-container svg:hover{
-  color: #1db954;
+  color: rgb(29, 185, 84);
   cursor: pointer;
 }

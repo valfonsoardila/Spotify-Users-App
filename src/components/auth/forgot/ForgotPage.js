@@ -54,7 +54,6 @@ const ForgotPage = ({ onComponentChange }) => {
           text="Send me a reset code"
           mode="view-web"
           icon={""}
-          colorBg={"#1db954"}
           colorIcon={"white"}
           margin={"10px"}
         />

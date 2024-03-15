@@ -32,7 +32,6 @@ const RegisterPage = ({ onComponentChange }) => {
           text="Sign up"
           mode="view-web"
           icon={""}
-          colorBg={"#1db954"}
           colorIcon={"white"}
           margin={"10px"}
         />

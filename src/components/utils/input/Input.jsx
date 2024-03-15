@@ -8,7 +8,7 @@ const Input = ({ type, placeholder, focus = false, value, onChange  }) => {
     margin: "10px 0px",
     paddingTop: "10px",
     paddingBottom: "10px",
-    paddingBottom: "10px",
+    border: "none",
     borderBottom: "1px solid var(--borderInput)",
     outline: "none",
     fontSize: "16px",
@@ -25,8 +25,6 @@ const Input = ({ type, placeholder, focus = false, value, onChange  }) => {
   const styles = {
     ...baseStyles,
     ...(focus ? focusedStyles : {}), // Apply focused styles conditionally
-    border: "none", // Ensure consistent border handling (remove default for underline)
-    borderBottom: focus ? "1px solid var(--borderInput)" : "1px solid var(--borderInput)", // Set underline for non-focused state
   };
   return (
     <input
