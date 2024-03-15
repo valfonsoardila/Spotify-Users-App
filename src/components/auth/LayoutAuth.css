@@ -44,20 +44,12 @@
   }
 }
 .option-mode-icon{
-  width: 5%;
+  width: 12%;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
-}
-.option-mode-icon svg{
-  width: 80%;
-  color: rgb(141, 140, 140);
-}
-.option-mode-icon svg:hover{
-  width: 80%;
-  color: rgb(197, 196, 196);
 }
 .container-auth {
   width: 40%;

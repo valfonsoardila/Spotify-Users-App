@@ -1,6 +1,7 @@
 import React from "react";
-import ButtonSocial from "../../utils/buttonLogin/ButtonSocial";
-import ButtonLogin from "../../utils/buttonLogin/ButtonLogin";
+import ButtonSocial from "../../utils/buttonAuth/ButtonSocial";
+import ButtonLogin from "../../utils/buttonAuth/ButtonLogin";
+import Input from "../../utils/input/Input";
 import "./LoginPage.css";
 import { faMobile, faAngleRight } from "@fortawesome/free-solid-svg-icons";
 import { faGoogle, faFacebook } from "@fortawesome/free-brands-svg-icons";
@@ -18,20 +19,15 @@ const LoginPage = ({ onComponentChange }) => {
   return (
     <>
       <div className="logocontainer">
-        <h1>Spotify</h1>
+        <h1>Spotify Users</h1>
         <span>Login</span>
       </div>
       <div className="formcontainer">
         <div className="inputcontainer">
-          <input type="text" placeholder="Email" className="input" required />
+          <Input type="email" placeholder="Email" />
         </div>
         <div className="inputcontainer">
-          <input
-            type="password"
-            placeholder="Password"
-            className="input"
-            required
-          />
+          <Input type="password" placeholder="Password" />
           <div className="form-other-links">
             <div className="forgot-password">
               <span onClick={handleForgotClick}>Forgot your password?</span>
@@ -56,15 +52,17 @@ const LoginPage = ({ onComponentChange }) => {
         </div>
         <div className="social-login-buttons">
           <ButtonSocial
-            text="Continue with phone number"
+            text=""
             icon={faMobile}
             color={"black"}
+            type={"mobile"}
           />
-          <ButtonSocial text="Continue with Google" icon={faGoogle} />
+          <ButtonSocial text="" icon={faGoogle} type={"google"} />
           <ButtonSocial
-            text="Continue with Facebook"
+            text=""
             icon={faFacebook}
             color={"#3B5998"}
+            type={"facebook"}
           />
         </div>
       </div>

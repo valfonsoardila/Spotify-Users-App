@@ -1,0 +1,18 @@
+:root {
+  --color-light-background: #ffffff;
+  --color-light-text: #000000;
+  --color-dark-background: #222222;
+  --color-dark-text: #ffffff;
+}
+
+body {
+  background-color: var(--color-light-background);
+  color: var(--color-light-text);
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: var(--color-dark-background);
+    color: var(--color-dark-text);
+  }
+}

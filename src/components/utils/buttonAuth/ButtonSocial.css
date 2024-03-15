@@ -1,0 +1,16 @@
+.button-container button{
+  display: flex;
+  width: 30px;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border-radius: 50%;  
+  border: 0.5px solid rgba(29, 185, 84, 0.5);
+  cursor: pointer;
+}
+.button-container:hover {
+  border-radius: 50%;
+  border: 0.8px solid rgba(29, 185, 84, 0.5);
+  background-color: rgba(200, 200, 200, 0.2);
+}

@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleLeft } from "@fortawesome/free-solid-svg-icons";
-import ButtonLogin from "../../utils/buttonLogin/ButtonLogin";
+import ButtonLogin from "../../utils/buttonAuth/ButtonLogin";
+import Input from "../../utils/input/Input";
 import "./ForgotPage.css";
 
 const ForgotPage = ({ onComponentChange }) => {
@@ -33,26 +34,24 @@ const ForgotPage = ({ onComponentChange }) => {
   return (
     <>
       <div className="logocontainer">
-        <h1>Spotify</h1>
+        <h1>Spotify Users</h1>
         <div className="title-container">
           <FontAwesomeIcon icon={faAngleLeft} onClick={handleBackClick} />
-          <span>Forgot your password?</span>
+          <span>Reset password</span>
         </div>
       </div>
       <div className="formcontainer">
         <div className="inputcontainer">
-          <input
+          <Input
             type="text"
             placeholder="Email o Phone number"
-            className="input"
-            required
             value={inputValue}
             onChange={handleInputChange}
           />
           {error && <p className="error">{error}</p>}
         </div>
         <ButtonLogin
-          text="Sign up"
+          text="Send me a reset code"
           mode="view-web"
           icon={""}
           colorBg={"#1db954"}

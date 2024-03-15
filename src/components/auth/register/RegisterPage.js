@@ -1,7 +1,8 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleLeft } from "@fortawesome/free-solid-svg-icons";
-import ButtonLogin from "../../utils/buttonLogin/ButtonLogin";
+import ButtonLogin from "../../utils/buttonAuth/ButtonLogin";
+import Input from "../../utils/input/Input";
 import "./RegisterPage.css";
 
 const RegisterPage = ({ onComponentChange }) => {
@@ -11,7 +12,7 @@ const RegisterPage = ({ onComponentChange }) => {
   return (
     <>
       <div className="logocontainer">
-        <h1>Spotify</h1>
+        <h1>Spotify Users</h1>
         <div className="title-container">
           <FontAwesomeIcon icon={faAngleLeft} onClick={handleBackClick} />
           <span>Sign up</span>
@@ -19,23 +20,13 @@ const RegisterPage = ({ onComponentChange }) => {
       </div>
       <div className="formcontainer">
         <div className="inputcontainer">
-          <input type="text" placeholder="Email" className="input" required />
+          <Input type="text" placeholder="Username" />
         </div>
         <div className="inputcontainer">
-          <input
-            type="password"
-            placeholder="Password"
-            className="input"
-            required
-          />
+          <Input type="email" placeholder="Email" />
         </div>
         <div className="inputcontainer">
-          <input
-            type="password"
-            placeholder="Confirm Password"
-            className="input"
-            required
-          />
+          <Input type="password" placeholder="Password" />
         </div>
         <ButtonLogin
           text="Sign up"

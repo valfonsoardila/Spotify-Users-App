@@ -6,6 +6,7 @@ import { faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
 import LoginPage from "./login/LoginPage";
 import RegisterPage from "./register/RegisterPage";
 import ForgotPage from "./forgot/ForgotPage";
+import ButtonToggleTheme from "../utils/buttonToggle/ButtonToggleTheme";
 import { motion } from "framer-motion";
 
 const LayoutAuth = () => {
@@ -23,7 +24,7 @@ const LayoutAuth = () => {
           <div className="container-option-mode">
             <span>Dark Mode</span>
             <div className="option-mode-icon">
-              <FontAwesomeIcon icon={faMoon} />
+              <ButtonToggleTheme />
             </div>
           </div>
           <div className="container-logo">

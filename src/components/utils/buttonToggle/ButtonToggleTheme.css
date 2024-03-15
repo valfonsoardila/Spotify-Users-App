@@ -1,0 +1,19 @@
+.toggleTheme:hover {
+  cursor: pointer;
+}
+.toggleTheme button {
+  background-color: transparent;
+  border: none;
+}
+.toggleTheme svg {
+  color: #000;
+  width: 15px;
+  color: rgb(141, 140, 140);
+  height: auto;
+}
+.toggleTheme svg:hover {
+  color: rgba(141, 140, 140, 0.5);
+  cursor: pointer;
+}
+
+
