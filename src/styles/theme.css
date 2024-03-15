@@ -1,18 +1,19 @@
-:root {
-  --color-light-background: #ffffff;
-  --color-light-text: #000000;
-  --color-dark-background: #222222;
-  --color-dark-text: #ffffff;
+.light {
+  --bgApp: rgba(255, 255, 255, 9);
+  --bgGradientApp: linear-gradient(to bottom, rgba(255, 255, 255, 0) 1%, rgba(255, 255, 255)40%); /* Fondo con gradiente blanco a transparente */
+  --blurMain: rgba(220, 220, 220, 0.05);
+  --borderInput: rgba(0, 0, 0, 0.5);
+  --textPrimary: #000;
+  --textSecondary: #363636;
+  --textTertiary: #8e8e8e;
 }
 
-body {
-  background-color: var(--color-light-background);
-  color: var(--color-light-text);
-}
-
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: var(--color-dark-background);
-    color: var(--color-dark-text);
-  }
+.dark {
+  --bgApp: rgba(0, 0, 0, 0.9);
+  --bgGradientApp: linear-gradient(to bottom, rgba(0, 0, 0, 0) 1%, rgba(0, 0, 0)40%); /* Fondo con gradiente */
+  --blurMain: rgba(15, 15, 15, 0.5);
+  --borderInput: rgba(255, 255, 255, 0.5);
+  --textPrimary: #fff;
+  --textSecondary: #d4d4d4;
+  --textTertiary: #8e8e8e;
 }

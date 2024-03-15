@@ -35,7 +35,7 @@
 
 .intro-container h1 {
   font-size: 50px;
-  color: #000;
+  color: var(--textPrimary);
   margin: 0%;
   font-weight: bold;
   font-family: "Spotify";
@@ -66,7 +66,7 @@
 .intro-container p {
   font-size: 16px;
   margin-top: 10px;
-  color: #000;
+  color: var(--textTertiary);
 }
 
 #particles-js {

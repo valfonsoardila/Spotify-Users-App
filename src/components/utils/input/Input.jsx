@@ -2,13 +2,17 @@ import React from "react";
 
 const Input = ({ type, placeholder, focus = false, value, onChange  }) => {
   const baseStyles = {
+    backgroundColor: "transparent",
     width: "100%",
     height: "20px",
     margin: "10px 0px",
     paddingTop: "10px",
     paddingBottom: "10px",
+    paddingBottom: "10px",
+    borderBottom: "1px solid var(--borderInput)",
     outline: "none",
     fontSize: "16px",
+    color: "var(--textPrimary)",
   };
 
   const focusedStyles = {
@@ -22,7 +26,7 @@ const Input = ({ type, placeholder, focus = false, value, onChange  }) => {
     ...baseStyles,
     ...(focus ? focusedStyles : {}), // Apply focused styles conditionally
     border: "none", // Ensure consistent border handling (remove default for underline)
-    borderBottom: focus ? "none" : "1px solid #000", // Set underline for non-focused state
+    borderBottom: focus ? "1px solid var(--borderInput)" : "1px solid var(--borderInput)", // Set underline for non-focused state
   };
   return (
     <input

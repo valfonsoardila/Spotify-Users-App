@@ -7,11 +7,8 @@ import "./ButtonToggleTheme.css";
 const ButtonToggleTheme = () => {
   const { dark, toggleTheme } = useThemeContext();
 
-  const ToggleThemeIcon = useMemo(
-    () => (dark ? faMoon : faSun),
-    [dark]
-  );
-  
+  const ToggleThemeIcon = useMemo(() => (dark ? faSun : faMoon), [dark]);
+
   return (
     <div className="toggleTheme">
       <button type="button" onClick={toggleTheme} aria-label="Toggle Theme">

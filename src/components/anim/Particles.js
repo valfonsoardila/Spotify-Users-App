@@ -1,4 +1,5 @@
 import Particles, { initParticlesEngine } from "@tsparticles/react";
+import { useThemeContext } from "../../hooks/themeHook/themeHook";
 import { useEffect, useMemo, useState } from "react";
 // import { loadAll } from "@/tsparticles/all"; // if you are going to use `loadAll`, install the "@tsparticles/all" package too.
 // import { loadFull } from "tsparticles"; // if you are going to use `loadFull`, install the "tsparticles" package too.
@@ -8,7 +9,7 @@ import { loadSlim } from "@tsparticles/slim"; // if you are going to use `loadSl
 
 
 const ParticlesComponent = (props) => {
-
+  const { dark } = useThemeContext();
   const [init, setInit] = useState(false);
   // this should be run only once per application lifetime
   useEffect(() => {
@@ -30,11 +31,81 @@ const ParticlesComponent = (props) => {
   };
 
 
-  const options = useMemo(
+  const lightParticles = useMemo(
     () => ({
       background: {
         color: {
-          value: "white",
+          value: "#fff",
+        },
+      },
+      fpsLimit: 120,
+      interactivity: {
+        events: {
+          onClick: {
+            enable: true,
+            mode: "repulse",
+          },
+          onHover: {
+            enable: true,
+            mode: 'grab',
+          },
+        },
+        modes: {
+          push: {
+            distance: 200,
+            duration: 15,
+          },
+          grab: {
+            distance: 150,
+          },
+        },
+      },
+      particles: {
+        color: {
+          value: "rgb(29, 185, 84);",
+        },
+        links: {
+          color: "rgb(29, 185, 84);",
+          distance: 150,
+          enable: true,
+          opacity: 0.3,
+          width: 1,
+        },
+        move: {
+          direction: "none",
+          enable: true,
+          outModes: {
+            default: "bounce",
+          },
+          random: true,
+          speed: 1,
+          straight: false,
+        },
+        number: {
+          density: {
+            enable: true,
+          },
+          value: 150,
+        },
+        opacity: {
+          value: 1.0,
+        },
+        shape: {
+          type: "circle",
+        },
+        size: {
+          value: { min: 1, max: 3 },
+        },
+      },
+      detectRetina: true,
+    }),
+    [],
+  );
+  const darkParticles = useMemo(
+    () => ({
+      background: {
+        color: {
+          value: "#000",
         },
       },
       fpsLimit: 120,
@@ -101,8 +172,9 @@ const ParticlesComponent = (props) => {
     [],
   );
 
-
-  return <Particles id={props.id} init={particlesLoaded} options={options} />; 
+  return <Particles id={props.id} init={particlesLoaded} options={
+    dark ? darkParticles : lightParticles
+  } />; 
 };
 
 export default ParticlesComponent;

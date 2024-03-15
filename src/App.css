@@ -1,5 +1,8 @@
+@import "styles/theme";
+
 .App {
   text-align: center;
+  background-color: var(--bgApp);
 }
 
 .App-logo {
