@@ -2,7 +2,7 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./ButtonSocial.css";
 
-const ButtonLogin = ({ text, icon, color, type }) => {
+const ButtonSocial= ({ text, icon, color, type }) => {
   return (
     <div className="button-container">
       <button>
@@ -47,4 +47,4 @@ const ButtonLogin = ({ text, icon, color, type }) => {
   );
 };
 
-export default ButtonLogin;
+export default ButtonSocial;

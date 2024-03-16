@@ -3,9 +3,13 @@
   --bgGradientApp: linear-gradient(to bottom, rgba(255, 255, 255, 0) 1%, rgba(255, 255, 255)40%); /* Fondo con gradiente blanco a transparente */
   --blurMain: rgba(220, 220, 220, 0.05);
   --borderInput: rgba(0, 0, 0, 0.5);
+  --borderInpuDate: rgba(255, 255, 255, 0.5);
   --textPrimary: #000;
-  --textSecondary: #363636;
+  --textSecondary: #fff;
   --textTertiary: #8e8e8e;
+  --toggleMode: rgb(141, 140, 140);
+  --blurUser: rgba(255, 255, 255, 0.6);
+  --bgCamera: rgba(25, 25, 25, 0.3);
 }
 
 .dark {
@@ -13,7 +17,11 @@
   --bgGradientApp: linear-gradient(to bottom, rgba(0, 0, 0, 0) 1%, rgba(0, 0, 0)40%); /* Fondo con gradiente */
   --blurMain: rgba(15, 15, 15, 0.5);
   --borderInput: rgba(255, 255, 255, 0.5);
+  --borderInpuDate: rgba(0, 0, 0, 0.5);
   --textPrimary: #fff;
-  --textSecondary: #d4d4d4;
+  --textSecondary: #000;
   --textTertiary: #8e8e8e;
+  --toggleMode: rgb(255, 255, 255);
+  --blurUser: rgba(0, 0, 0, 0.8);
+  --bgCamera: rgba(0, 0, 0, 0.5);
 }

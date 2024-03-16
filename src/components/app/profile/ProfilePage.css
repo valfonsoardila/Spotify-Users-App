@@ -1,0 +1,99 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.container h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--textPrimary);
+  margin-bottom: 2%;
+}
+.blur-container {
+  width: 100%;
+  height: 100%;
+  background-color: var(--blurUser);
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+.profile-container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.profile-header{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  width: 100%;
+  height: 10%;
+}
+.profile-header h1{
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--textPrimary);
+  margin: 0;
+}
+.profile-header img{
+  height: 40px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.profile-header-logo{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+}
+.profile-header-logo h1{
+  font-size: 22px;
+  font-weight: 600;
+  font-family: "Spotify";
+  color: rgb(29, 185, 84);
+  margin: 0;
+}
+@font-face {
+  font-family: "Spotify"; /* Puedes darle el nombre que desees */
+  src: url("../../../assets/fonts/CircularSpotifyText-Bold.otf")
+    format("opentype");
+}
+.profile-content {
+  width: 50%;
+  height: 90%;
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: var(--blurUser);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+.profile-image {
+  display: flex;
+  width: 100%;
+  height: 30%;
+  align-items: center;
+  justify-content: center;
+}
+.profile-fomr {
+  width: 80%;
+  height: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.inputcontainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}

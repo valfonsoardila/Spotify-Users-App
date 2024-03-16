@@ -12,6 +12,7 @@ const ButtonLogin = ({ text, mode, icon, colorBg, colorIcon, margin }) => {
         border: "none",
         marginTop: margin,
         marginBottom: margin,
+        color: "white"
       }}
       onMouseOver={(e) => (e.target.style.background = "#3eb367")}
       onMouseOut={(e) =>

@@ -46,7 +46,7 @@ const LoginPage = ({ onComponentChange }) => {
         </div>
         <div className="divider">
           <hr />
-          <span>or</span>
+            <span>or</span>
           <hr />
         </div>
         <div className="social-login-buttons">

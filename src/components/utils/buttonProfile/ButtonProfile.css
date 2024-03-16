@@ -1,0 +1,71 @@
+.button-profile {
+  display: flex;
+  height: 100%;
+  width: 130px;
+  border: none;
+  border-radius: 50%;
+  background-color: var(--bgApp);
+  box-shadow: 0px 0px 10px 0px var(--borderInput);
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.button-profile img {
+  width: 95%;
+  height: 95%;
+  border-radius: 50%;
+}
+.container-profile{
+  display: flex;
+  height: 100%;
+  width: 100%;
+  position: absolute; /* Position the SVG absolutely */
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Account for offset due to centering */
+}
+.button-profile-trash{
+  display: flex;
+  height: 100%;
+  width: 50%;
+  align-items: end;
+}
+.button-profile-modify{
+  display: flex;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.delete-icon {
+  display: flex;
+  width: 70%;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--bgCamera);
+  align-items: center;
+  justify-content: center;
+}
+.camera-icon {
+  display: flex;
+  width: 40%;
+  height: 40%;
+  border-radius: 50%;
+  background-color: var(--bgCamera);
+  align-items: center;
+  justify-content: center;
+}
+.delete-icon svg {
+  width: 60%;
+  height: 60%;
+}
+.camera-icon svg {
+  width: 70%;
+  height: 70%;
+}
+.delete-icon:hover {
+  background-color: var(--borderInput);
+}
+.camera-icon:hover {
+  background-color: var(--borderInput);
+}

@@ -7,7 +7,7 @@
 }
 .toggleTheme svg {
   width: 15px;
-  color: rgb(141, 140, 140);
+  color: var(--toggleMode);
   height: auto;
 }
 .toggleTheme svg:hover {

@@ -2,7 +2,7 @@
 
 .App {
   text-align: center;
-  background-color: var(--bgApp);
+  background: var(--bgApp);
 }
 
 .App-logo {

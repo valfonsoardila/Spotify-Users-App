@@ -84,6 +84,6 @@
 .container-option-mode span{
   font-size: 15px;
   font-weight: 400;
-  color: rgb(141, 140, 140);
+  color: var(--toggleMode);
   margin-right: 2%;
 }

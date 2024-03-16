@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import "./LayoutAuth.css";
 import { resources } from "../../assets/resources";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
 import LoginPage from "./login/LoginPage";
 import RegisterPage from "./register/RegisterPage";
 import ForgotPage from "./forgot/ForgotPage";
