@@ -1,13 +1,14 @@
 import React from 'react';
 import Profile from './profile/Profile';
 import ToggleButton from './switch/ToggleButton';
+import Path from './path/Path';
 import './Header.css';
 
-const Header = () => {
+const Header = ({path}) => {
   return (
     <div className='container-header'>
       <div className='header-path'>
-        <h1>Pathfinding Visualizer</h1>
+        <Path path={path} />
       </div>
       <div className='header-view-option'>
         <ToggleButton />

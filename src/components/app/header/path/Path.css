@@ -1,0 +1,21 @@
+.path {
+  display: flex;
+  width: 90%;
+  height: 90%;
+  align-items: center;
+  justify-content: center;
+}
+.path:hover {
+  background: linear-gradient(90deg, rgba(240, 240, 240, 0.1), rgba(0, 0, 0, 0.1));
+  border-radius: 5px;
+  cursor: pointer;
+}
+.path h1 {
+  font-size: 16px;
+  color: var(--textPrimary);
+  cursor: pointer;
+}
+.path:hover h1 {
+  text-decoration: underline;
+  cursor: pointer;
+}

@@ -6,7 +6,7 @@
     cursor: pointer;
 }
 .profile:hover{
-    background-color: #3a3a3a;
+    background: linear-gradient(90deg, rgba(240, 240, 240, 0.1), rgba(0, 0, 0, 0.1));
     border-radius: 5px;
 }
 .profile-image{
@@ -43,6 +43,16 @@
     justify-content: center;
 }
 .notifications svg{
+    font-size: 20px;
+    color: var(--textPrimary);
+}
+.messages{
+    display: flex;
+    margin-right: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.messages svg{
     font-size: 20px;
     color: var(--textPrimary);
 }

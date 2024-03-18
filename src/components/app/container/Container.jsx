@@ -10,7 +10,7 @@ const Container = ({hovered}) => {
       }}
     >
       <div className="main-container">
-        <Header />
+        <Header path={"Inicio"} />
         <div className="content-container">
 
         </div>
