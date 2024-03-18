@@ -59,7 +59,7 @@
 }
 @font-face {
   font-family: "Spotify"; /* Puedes darle el nombre que desees */
-  src: url("../../../assets/fonts/CircularSpotifyText-Bold.otf")
+  src: url("../../assets/fonts/CircularSpotifyText-Bold.otf")
     format("opentype");
 }
 .profile-content {

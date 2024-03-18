@@ -1,0 +1,14 @@
+.container-blur{
+    display: flex;
+    position: relative; 
+    height: 100%;
+    width: -webkit-fill-available;
+    background: transparent;
+}
+.main-container{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    background: transparent;
+}

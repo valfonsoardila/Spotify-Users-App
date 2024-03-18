@@ -10,6 +10,11 @@
   --toggleMode: rgb(141, 140, 140);
   --blurUser: rgba(255, 255, 255, 0.6);
   --bgCamera: rgba(25, 25, 25, 0.3);
+  --traslucir:rgba(25, 25, 25, 0.3);
+  --bgItem:linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(25, 25, 25, 0.15) 100%);
+  --bgHeader: linear-gradient(to right, rgb(250, 250, 250), rgb(240, 240,240), rgb(250, 250, 250));
+  --hoverButton: linear-gradient(to right, rgb(29, 185, 84, 0.7), #ffffff);
+  --bgButtonSeacrh: linear-gradient(to right, rgba(29, 185, 84, 0.3), rgba(240, 240, 240));
 }
 
 .dark {
@@ -24,4 +29,9 @@
   --toggleMode: rgb(255, 255, 255);
   --blurUser: rgba(0, 0, 0, 0.8);
   --bgCamera: rgba(0, 0, 0, 0.5);
+  --traslucir:rgba(25, 25, 25, 0.3);
+  --bgItem:linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%);
+  --bgHeader: linear-gradient(to right, rgb(10, 10, 10), rgb(35, 37, 38), rgb(20, 20, 20));
+  --hoverButton: linear-gradient(to right, rgb(29, 185, 84, 0.7), #191414);
+  --bgButtonSeacrh: linear-gradient(to right, rgb(29, 185, 84, 0.7), #191414);
 }

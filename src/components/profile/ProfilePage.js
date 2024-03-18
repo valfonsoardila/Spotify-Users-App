@@ -1,11 +1,11 @@
 import { motion } from "framer-motion";
-import { resources } from "../../../assets/resources";
+import { resources } from "../../assets/resources";
 import "./ProfilePage.css";
-import ButtonProfile from "../../utils/buttonProfile/ButtonProfile";
-import Input from "../../utils/input/Input";
-import InputSelect from "../../utils/input/InputSelect";
-import ButtonLogin from "../../utils/buttonAuth/ButtonLogin";
-import Prefix from "../../../assets/json/Prefix";
+import ButtonProfile from "../utils/buttonProfile/ButtonProfile";
+import Input from "../utils/input/Input";
+import InputSelect from "../utils/input/InputSelect";
+import ButtonLogin from "../utils/buttonAuth/ButtonLogin";
+import Prefix from "../../assets/json/Prefix";
 
 const ProfilePage = () => {
   return (
@@ -21,7 +21,7 @@ const ProfilePage = () => {
           <div className="profile-header">
             <div className="profile-header-logo">
               <img src={resources.logo} alt="logo" />
-              <h1>Spotify</h1>
+              <h1>Spotify Users</h1>
             </div>
             <h1>Register my profile</h1>
           </div>

@@ -3,7 +3,7 @@ import { Route, Routes, useLocation } from "react-router-dom";
 
 const AnimationIntro = lazy(() => import("../components/anim/AnimationIntro"));
 const LayoutAuth = lazy(() => import("../components/auth/LayoutAuth"));
-const Profile = lazy(() => import("../components/app/profile/ProfilePage"));
+const Profile = lazy(() => import("../components/profile/ProfilePage"));
 const LayoutDasboard = lazy(() =>
   import("../components/app/LayoutDashboard")
 );
