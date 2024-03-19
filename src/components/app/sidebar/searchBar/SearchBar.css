@@ -38,5 +38,5 @@
     cursor: pointer;
 }
 .search-button:hover{
-    background: var(--hoverButton);
+    background: transparent;
 }

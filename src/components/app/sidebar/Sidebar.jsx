@@ -5,8 +5,10 @@ import SearchBar from "./searchBar/SearchBar";
 import { faBookBookmark, faCompass, faHome, faUserFriends } from "@fortawesome/free-solid-svg-icons";
 import "./Sidebar.css";
 
-const Sidebar = ({ onHoverChange }) => {
+const Sidebar = ({ onHoverChange, onComponentChange }) => {
   const [onHover, setOnHover] = useState(false);
+  const [selectedItem, setSelectedItem] = useState("home"); // Nuevo estado para el ítem seleccionado
+
   const handleMouseEnter = () => {
     setOnHover(true);
     onHoverChange(true); // Llamamos a la función del padre con true
@@ -15,6 +17,10 @@ const Sidebar = ({ onHoverChange }) => {
   const handleMouseLeave = () => {
     setOnHover(false);
     onHoverChange(false); // Llamamos a la función del padre con true
+  };
+  const handleMenuItemClick = (menuItemName) => {
+    setSelectedItem(menuItemName); // Establecer el ítem seleccionado al hacer clic en él
+    onComponentChange(menuItemName); // Llamar a la función de cambio de componente
   };
 
   return (
@@ -35,10 +41,10 @@ const Sidebar = ({ onHoverChange }) => {
         <SearchBar onHover={onHover} />
       </div>
       <div className="sidebar-menu">
-        <Item onHover={onHover} text={"Inicio"} icon={faHome} />
-        <Item onHover={onHover} text={"Explorar"} icon={faCompass} />
-        <Item onHover={onHover} text={"Crear red"} icon={faUserFriends} />
-        <Item onHover={onHover} text={"Mi biblioteca"} icon={faBookBookmark} />
+        <Item onHover={onHover} text={"Inicio"} icon={faHome} onClick={() => handleMenuItemClick("home")} />
+        <Item onHover={onHover} text={"Explorar"} icon={faCompass} onClick={() => handleMenuItemClick("explore")} />
+        <Item onHover={onHover} text={"Crear red"} icon={faUserFriends} onClick={() => handleMenuItemClick("grid")} />
+        <Item onHover={onHover} text={"Mi biblioteca"} icon={faBookBookmark} onClick={() => handleMenuItemClick("library")} />
       </div>
     </div>
   );
