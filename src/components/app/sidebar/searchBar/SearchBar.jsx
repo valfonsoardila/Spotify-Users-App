@@ -50,7 +50,11 @@ const SearchBar = ({ onHover }) => {
             : onHover && isWriting
             ? { display: "flex", transition: "all 0.5s ease" }
             : !onHover && isWriting
-            ? { background: "transparent", transition: "all 0.1s ease" }
+            ? {
+                background: "transparent",
+                transition: "all 0.1s ease",
+                boxShadow: "none",
+              }
             : { display: "none", transition: "all 0.5s ease" }
         }
       >

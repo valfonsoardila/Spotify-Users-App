@@ -5,14 +5,23 @@
     justify-content: end;
     cursor: pointer;
 }
-.profile:hover{
+.profile-user:hover{
     background: linear-gradient(90deg, rgba(240, 240, 240, 0.1), rgba(0, 0, 0, 0.1));
-    border-radius: 5px;
+    border-radius: 25px;
+}
+.profile-user{
+    display: flex;
+    width: -webkit-fill-available;
+    height: 100%;
+    background: var(--blurMain);
+    border-radius: 25px;
+    align-items: center;
+    justify-content: center;
 }
 .profile-image{
     display: flex;
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
     margin-right: 10px;
     align-items: center;
@@ -54,5 +63,10 @@
 }
 .messages svg{
     font-size: 20px;
+    color: var(--textPrimary);
+}
+.profile-user svg{
+    font-size: 15px;
+    margin-right: 10px;
     color: var(--textPrimary);
 }
